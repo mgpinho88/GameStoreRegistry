@@ -3,10 +3,12 @@
 Repository URL: https://github.com/mgpinho88/GameStoreRegistry.git
 
 ### Retail Service
+```
 Retail API Service
 Properties File: retail-service.properties
 server.port=8181
 management.endpoints.web.exposure.include=*
+```
 
 ## Level Up Service
 File Name: level-up-service.properties
