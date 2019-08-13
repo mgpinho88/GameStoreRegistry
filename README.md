@@ -2,13 +2,6 @@
 
 Repository URL: https://github.com/mgpinho88/GameStoreRegistry.git
 
-### Retail Service
-```
-Properties File: retail-service.properties
-server.port=8181
-management.endpoints.web.exposure.include=*
-```
-
 ## Level Up Service
 ```
 File Name: level-up-service.properties
@@ -16,7 +9,7 @@ server.port=7001
 management.endpoints.web.exposure.include=*
 ```
 
-### Description
+#### Description
 This is a microservice that contains all CRUD functionality.
 
 The Read endpoint of the service will have a circuit breaker.
@@ -28,7 +21,7 @@ server.port=7002
 management.endpoints.web.exposure.include=*
 ```
 
-### Description
+#### Description
 This is a microservice that contains all CRUD functionality
 
 ## Inventory Service
@@ -38,7 +31,7 @@ server.port=7003
 management.endpoints.web.exposure.include=*
 ```
 
-### Description
+#### Description
 This is a microservice that contains all CRUD functionality
 
 ## Product Service
@@ -48,7 +41,7 @@ server.port=7004
 management.endpoints.web.exposure.include=*
 ```
 
-### Description
+#### Description
 This is a microservice that contains all the CRUD functionality.
 
 This service contains information on all the Products that the company has sold in the past and may sell in the future. This service does not contain information about current inventory levels.
@@ -63,12 +56,12 @@ management.endpoints.web.exposure.include=*
 ### Description
 This is a microservice that contains all the CRUD functionality.
 
-### Configuration Server
+## Configuration Server
 ```
 server.port=9999
 ```
 
-### Description
+#### Description
 This is the server where these services will run on. The services above will connect through this port. To test if the port is working there is a `test.properties` file associated in this repository and when you visit `http://localhost:9999/test/master` the message "Server is running" should appear in a JSON object.
 
 ## Service Registry
