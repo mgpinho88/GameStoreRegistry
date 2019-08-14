@@ -5,6 +5,7 @@ Repository URL: https://github.com/mgpinho88/GameStoreRegistry.git
 ## Setup
 Below are the Config Server and Eureka Registry details. This describes the ports where the services will connect through and communicate with each other through. These are the starting point in our Game Store microservice.
 
+<<<<<<< HEAD
 
 ### Configuration Server
 server.port=9999
@@ -60,12 +61,24 @@ management.endpoints.web.exposure.include=*
 
 ##### API
 The Admin API is responsible for all CRUD on the various services. As an admin, depending on your role, you will be able to add, update, get, and delete from various databases. The admin will be able to connect to:
+=======
+## Level Up Service
+```
+File Name: level-up-service.properties
+server.port=7001
+management.endpoints.web.exposure.include=*
+```
+
+#### Description
+This is a microservice that contains all CRUD functionality.
+>>>>>>> 123fb8ed4d8f5bcaa0d56207c2894f96a176ee2f
 
 * Customers
 * Products
 * Inventory
 * Orders
 
+<<<<<<< HEAD
 
 ##### Security Rules
 The security rules for the Admin API Service are:
@@ -86,35 +99,71 @@ The security rules for the Admin API Service are:
 ## Customer Service
 File Name: customer-service.properties
 server.port=7005
+=======
+## Invoice Service
+```
+File Name: invoice-service.properties
+server.port=7002
+>>>>>>> 123fb8ed4d8f5bcaa0d56207c2894f96a176ee2f
 management.endpoints.web.exposure.include=*
+```
 
+<<<<<<< HEAD
 ### Description
 This is a microservice that contains all the CRUD functionality.
+=======
+#### Description
+This is a microservice that contains all CRUD functionality
+>>>>>>> 123fb8ed4d8f5bcaa0d56207c2894f96a176ee2f
 
 ## Inventory Service
+```
 File Name: inventory-service.properties
 server.port=7003
 management.endpoints.web.exposure.include=*
+```
 
-### Description
+#### Description
 This is a microservice that contains all CRUD functionality
 
+<<<<<<< HEAD
 ## Invoice Service
 File Name: invoice-service.properties
 server.port=7002
+=======
+## Product Service
+```
+File Name: product-service.properties
+server.port=7004
+>>>>>>> 123fb8ed4d8f5bcaa0d56207c2894f96a176ee2f
 management.endpoints.web.exposure.include=*
+```
 
+<<<<<<< HEAD
 ### Description
 This is a microservice that contains all CRUD functionality
 
 ## Level Up Service
 File Name: level-up-service.properties
 server.port=7001
+=======
+#### Description
+This is a microservice that contains all the CRUD functionality.
+
+This service contains information on all the Products that the company has sold in the past and may sell in the future. This service does not contain information about current inventory levels.
+
+## Customer Service
+```
+File Name: customer-service.properties
+server.port=7005
+>>>>>>> 123fb8ed4d8f5bcaa0d56207c2894f96a176ee2f
 management.endpoints.web.exposure.include=*
+```
 
 ### Description
 This is a microservice that contains all CRUD functionality.
 
+<<<<<<< HEAD
 The Read endpoint of the service will have a circuit breaker.
 
 ## Product Service
@@ -124,5 +173,14 @@ management.endpoints.web.exposure.include=*
 
 ### Description
 This is a microservice that contains all the CRUD functionality.
+=======
+## Configuration Server
+```
+server.port=9999
+```
+
+#### Description
+This is the server where these services will run on. The services above will connect through this port. To test if the port is working there is a `test.properties` file associated in this repository and when you visit `http://localhost:9999/test/master` the message "Server is running" should appear in a JSON object.
+>>>>>>> 123fb8ed4d8f5bcaa0d56207c2894f96a176ee2f
 
 This service contains information on all the Products that the company has sold in the past and may sell in the future. This service does not contain information about current inventory levels.
