@@ -91,13 +91,15 @@ The security rules for the Admin API Service are:
 ## Customer Service
 ```
 File Name: customer-service.properties
-server.port=7005
+server.port=7105
 ## Invoice Service
 ```
 
 ### Description
 
 This is a microservice that contains all the CRUD functionality for the Customers database.
+
+As per the requirements the port for this service should be 7005, however, this port is already in use. The port is now updated to 7105.
 
 
 ## Inventory Service
